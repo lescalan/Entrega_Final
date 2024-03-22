@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulador de Prestamos</title>
+<!-- Bootstrap  -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <h2>Simulador de Prestamos</h2>
+    <form id="loan-form">
+        <div class="form-group">
+            <label for="loanAmount">Monto del Prestamo ($):</label>
+            <input type="number" class="form-control" id="loanAmount" required>
+        </div>
+
+        <div class="form-group">
+            <label for="interestRate">Tasa de Interes Anual (%):</label>
+            <input type="number" class="form-control" id="interestRate" step="0.01" required>
+        </div>
+
+        <div class="form-group">
+            <label for="loanTerm">Plazo (años):</label>
+            <input type="number" class="form-control" id="loanTerm" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Calcular</button>
+    </form>
+
+    <div id="results" style="display: none;">
+        <h3>Pago Mensual:</h3>
+        <p id="monthlyPayment"></p>
+        <h3>Monto Total:</h3>
+        <p id="totalPayment"></p>
+        <h3>Total Intereses:</h3>
+        <p id="totalInterest"></p>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

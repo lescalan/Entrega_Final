@@ -1,0 +1,5 @@
+[
+    { "id": 1, "name": "Juan", "amount": 10000, "interestRate": 5, "term": 5 },
+    { "id": 2, "name": "Paco", "amount": 15000, "interestRate": 6, "term": 3 },
+    { "id": 3, "name": "Pedro", "amount": 20000, "interestRate": 7, "term": 7 }
+]
